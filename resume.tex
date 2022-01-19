@@ -1,0 +1,116 @@
+% Modern CV LaTeX package
+\documentclass[11pt,a4paper,roman]{moderncv}        
+
+% General options:
+% Font size ('10pt', '11pt' and '12pt')
+% Paper size ('a4paper', letter-paper', 'a5paper', legal-paper')
+% Font family ('sans' and 'roman')
+
+% Modern CV themes
+\moderncvstyle{banking}
+% Style options:
+% 'casual', 'classic', old-style' and 'banking'
+
+\moderncvcolor{black}                                
+% Color options: 
+% 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% Character Encoding
+\usepackage[utf8]{inputenc}   
+
+% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+\usepackage{import}
+
+% Personal Data
+\name{John}{Doe}
+\phone[mobile]{+1-234-567-8999}
+\email{john.doe@gmail.com}            
+\homepage{www.john-doe.com}      
+
+\begin{document}
+\makecvtitle
+
+% Summary
+\section{About Me}
+% 
+\small{Ninja Programmer, can program in C++ while sleeping, LeetCode champion, HackerRank champion}
+
+% Career
+\section{Career Interests}
+% 
+\small{Computer Vision, Machine Learning, Artificial Intelligence}
+
+% Skills
+\section{Key Skills}
+% 
+\begin{itemize}
+	\item
+	\small{\textbf{Programming Languages: }  C++, Java, Python, JavaScript, Golang}
+	\item
+	\small{\textbf{Tools \& Frameworks: }  Git, ReactJS, Angular}
+\end{itemize}
+% 
+
+% Education
+\section{Education}
+
+\begin{itemize}
+	\item{\cventry{2009--2013}{Bachelor of Science in Computer Science and Engineering}
+	{MIT University}{USA}{\textit{Cumulative GPA 3.96}}{}}
+\end{itemize}
+
+% Experience
+\section{Professional Experience}
+
+\vspace{5pt}
+\subsection{Internships}
+
+\begin{itemize}
+
+	\item{\cventry{January, 2012--April, 2012}{Machine Learning Intern}{Acme Inc.}
+	{Hawaii, USA}{\textit{Software Development}}{}}
+	\vspace{3pt}
+
+	\small{Built and trained an awesome Machine Learning model that automated 30\% of companies
+	workflow and improved 40\% code coverage by creating awesome test pipelines.}
+	
+	\vspace{6pt}
+	
+	\item{\cventry{January, 2013--April, 2013}{Artificial Intelligence Intern}{FAANG}
+	{California, USA}{\textit{Software Development}}{}}
+	\vspace{3pt}
+
+	\small{Built and trained an awesome Deep Learning model and improved 30\% accuracy of
+	classification workflow for automated image labelling in real-time video processing.}
+	
+\end{itemize}
+
+% Projects
+\section{My Projects}
+
+\begin{itemize}
+
+	\vspace{5pt}
+	\item{\cventry{}{Implemented in hardcore C++}
+	{\emph{My Awesome Robot Operating System - } Ninja-Package}{Solo Project}
+	{\textit{ROSCPP}}{}}
+	
+	\vspace{5pt}
+	\item{\cventry{}{Implemented in hardcore C++}
+	{\emph{My Awesome CryptoCurrency - } JohnDoeCoin}{Solo Project}
+	{\textit{Blockchain}}{}}
+	
+\end{itemize}
+
+% Publications
+\section{Publications}
+
+\vspace{6pt}
+
+\begin{itemize}
+	\item{My awesome Blockchain CryptoCurrency that is environment friendly and scares Clown Tusk, Ninja Programmers Conference, USA 2013}
+\end{itemize}
+
+\end{document}
